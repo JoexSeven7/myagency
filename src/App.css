@@ -119,7 +119,7 @@ ul,
 
 .content-block ul li:before {
   content: '\f101';
-  font-family: 'fontawesome';
+  font-family: 'font awesome';
   position: absolute;
   top: 0;
   left: 0;
@@ -511,7 +511,7 @@ textarea {
 }
 
 .writeup-bg {
-  background-color:#2a5542;
+  background-color:#213c30;
   padding: 20px;            
   border-radius: 10px;      
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 

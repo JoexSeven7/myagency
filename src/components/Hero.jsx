@@ -30,7 +30,7 @@ var heroData = [
 
 export default function AppHero() {
     return(
-        <section id='home' class="hero-block">
+        <section id='home' className="hero-block">
             
             <Carousel fade >
                 {
@@ -45,7 +45,7 @@ export default function AppHero() {
                                 <Carousel.Caption>
                                     <h5>{hero.title}</h5>
                                     <p>{hero.description}</p>
-                                    <a className='btn btn-primary'href={hero.link}>Learn More <i class="fas fa-chevron-right"></i></a>
+                                    <a className='btn btn-primary'href={hero.link}>Learn More <i className="fas fa-chevron-right"></i></a>
                                 </Carousel.Caption>
                             </Carousel.Item>
 

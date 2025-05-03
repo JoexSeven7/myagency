@@ -23,9 +23,7 @@ export default function AppAbout(){
                    <Image src={img1} rounded />
                 </Col>
                 <Col sm={6}>
-                  <p className='text-center writeup-bg'>Welcome to Mage Global!
-
-                    At Mage Global, we believe in transforming ideas into reality. Our mission is to provide innovative, high-quality solutions that meet the diverse needs of our clients. With a passion for excellence and a commitment to customer satisfaction, we are dedicated to offering the best products and services tailored specifically to your needs.
+                  <p className='text-center writeup-bg'>Welcome to Mage Global! At Mage Global, we believe in transforming ideas into reality. Our mission is to provide innovative, high-quality solutions that meet the diverse needs of our clients. With a passion for excellence and a commitment to customer satisfaction, we are dedicated to offering the best products and services tailored specifically to your needs.
 
                     We specialize in describe your main product/service, aiming to simplify your industry-specific task or problem. Our team of experts is driven by creativity, collaboration, and a relentless pursuit of innovation. Whether you're looking for specific services/products, we are here to guide you every step of the way.
 

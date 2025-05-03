@@ -19,7 +19,7 @@ const pricingData = [
     link: 'https://www.facebook.com'
 },
 {
-    id: 1,
+    id: 3,
     plan: 'Ultimate',
     price: '$250',
     features: ['Wireframing', 'visual Design', '5 pages', 'Free Hosting', 'Support & Assistance'],

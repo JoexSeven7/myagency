@@ -11,7 +11,7 @@ export default function AppContact() {
             <Container fluid>
                 <div className='title-holder'>
                     <h2>Contact us</h2>
-                    <div className='subtitle'>get connected with us</div>
+                    <div className='subtitle'>Get connected with us</div>
                 </div>
                     <Form>
                         <Row>
@@ -36,21 +36,21 @@ export default function AppContact() {
                     </Form>
             </Container>
             <div className='google-map'>
-             <iframe title='map'src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16265810.327179383!2d17.3585034!3d5.5454937!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2sng!4v1737928374833!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <iframe title='map'src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16265810.327179383!2d17.3585034!3d5.5454937!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2sng!4v1737928374833!5m2!1sen!2sng" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <Container fluid>
                 <div className='contact-info'>
                     <ul>
                         <li>
-                            <i class='fas fa-envelope'></i>
+                            <i className='fas fa-envelope'></i>
                             hello@domain.com
                         </li>
                         <li>
-                            <i class='fas fa-phone'></i>
+                            <i className='fas fa-phone'></i>
                             07040602452
                         </li>
                         <li>
-                            <i class='fas fa-map-marker-alt'></i>
+                            <i className='fas fa-map-marker-alt'></i>
                             Nigeria
                         </li>
                     </ul>

@@ -56,7 +56,7 @@ export default function AppBlog(){
                                         <Card.Text>
                                         {blog.description}
                                         </Card.Text>
-                                         <a href={blog.link} className='btn btn-primary'>Read More <i class='fas fa-chevron-right'></i></a>
+                                         <a href={blog.link} className='btn btn-primary'>Read More <i className='fas fa-chevron-right'></i></a>
                                         
                                     </Card.Body>
                                 </Card>
