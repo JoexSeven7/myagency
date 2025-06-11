@@ -8,7 +8,7 @@ const teamsData = [
    
         {
           id: 1,
-          image: require('../assets/images/team1.jpg'),
+          image: require('../assets/images/face-1.jpg'),
           fbLink: 'https://www.facebook.com',
           twitterLink: 'https://www.twitter.com',
           linkedinLink: 'https://www.linkedin.com',
@@ -18,7 +18,7 @@ const teamsData = [
         },
         {
           id: 2,
-          image: require('../assets/images/team2.jpg'),
+          image: require('../assets/images/face-6.jpg'),
           fbLink: 'https://www.facebook.com',
           twitterLink: 'https://www.twitter.com',
           linkedinLink: 'https://www.linkedin.com',
@@ -28,7 +28,7 @@ const teamsData = [
         },
         {
           id: 3,
-          image: require('../assets/images/team3.jpg'),
+          image: require('../assets/images/face-7.jpg'),
           fbLink: 'https://www.facebook.com',
           twitterLink: 'https://www.twitter.com',
           linkedinLink: 'https://www.linkedin.com',
@@ -38,7 +38,7 @@ const teamsData = [
         },
         {
           id: 5,
-          image: require('../assets/images/team5.jpg'),
+          image: require('../assets/images/face-4.jpg'),
           fbLink: 'https://www.facebook.com',
           twitterLink: 'https://www.twitter.com',
           linkedinLink: 'https://www.linkedin.com',
@@ -48,7 +48,7 @@ const teamsData = [
         },
         {
           id: 6,
-          image: require('../assets/images/team6.jpg'),
+          image: require('../assets/images/face-11.jpg'),
           fbLink: 'https://www.facebook.com',
           twitterLink: 'https://www.twitter.com',
           linkedinLink: 'https://www.linkedin.com',
@@ -58,7 +58,7 @@ const teamsData = [
         },
         {
           id: 7,
-          image: require('../assets/images/team7.jpg'),
+          image: require('../assets/images/face-9.jpg'),
           fbLink: 'https://www.facebook.com',
           twitterLink: 'https://www.twitter.com',
           linkedinLink: 'https://www.linkedin.com',
