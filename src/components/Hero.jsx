@@ -37,10 +37,11 @@ export default function AppHero() {
           return (
             <Carousel.Item key={hero.id}>
               <img
-                className="d-block w-100"
-                src={hero.image}
-                alt={'Slide' + hero.id}
-              />
+                 className="d-block w-100"
+                 src={hero.image}
+                 alt={'Slide' + hero.id}
+                 loading="lazy"
+               />
               <Carousel.Caption>
                 <h5>{hero.title}</h5>
                 <p>{hero.description}</p>

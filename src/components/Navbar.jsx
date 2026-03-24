@@ -8,7 +8,7 @@ export default function AppHeader() {
     <Navbar expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="Mage Global Logo" width="100" height="50" />
+          <img src={logo} alt="Mage Global Logo" width="100" height="50" loading="lazy" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

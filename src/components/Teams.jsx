@@ -85,7 +85,7 @@ export default function AppTeams(){
                             return (
                 <Col sm={3} key={teams.id}>
                     <div className='image'>
-                        <Image src={teams.image} alt="image"/>
+                        <Image src={teams.image} alt="image" loading="lazy"/>
                         <div className='overlay'>
                             <div className='socials'>
                                 <ul>

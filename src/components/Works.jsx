@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Pagination from 'react-bootstrap/Pagination';
-
+import { useState } from 'react';
 
 const worksData = [
     {
@@ -69,50 +69,58 @@ const worksData = [
       title: 'Happy Days',
       subtitle: 'Web Design'
     }
-  ]
+];
+
+export default function AppWorks(){
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(3); // Show 3 items per page
+
+  // Calculate total pages
+  const totalPages = Math.ceil(worksData.length / itemsPerPage);
   
+  // Get current items for display
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = worksData.slice(indexOfFirstItem, indexOfLastItem);
   
-  let active = 2;
-  let items = [];
-  for (let number = 1; number <= 5; number++) {
-    items.push(
-      <Pagination.Item key={number} active={number === active}>
+  // Generate pagination items
+  const paginationItems = [];
+  for (let number = 1; number <= totalPages; number++) {
+    paginationItems.push(
+      <Pagination.Item key={number} active={number === currentPage} onClick={() => setCurrentPage(number)}>
         {number}
-      </Pagination.Item>,
+      </Pagination.Item>
     );
   }
 
-
-
-  export default function AppWorks(){
-    return(
-        <section id='works' className='block works-block'> 
-            <Container fluid>
-                <div className='title-holder'>
-                    <h2>Our works</h2>
-                    <div className='subtitle'>Our Amazing works</div>
-                </div>
-                <Row className='portfoliolist'>
-                    {
-                        worksData.map(works => {
-                            return (
-                                <Col sm={4} key={works.id}>
-                                    <div className='portfolio-wrapper'>
-                                        <a href={works.link}>
-                                        <Image src={works.image} rounded />
-                                            <div className='label text-center'>
-                                                <h3>{works.title}</h3>
-                                                <p>{works.subtitle}</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                               </Col>
-                            )
-                        })
-                    }
-                </Row>
-                 <Pagination size="sm">{items}</Pagination>
-            </Container>
+  return(
+      <section id='works' className='block works-block'> 
+          <Container fluid>
+              <div className='title-holder'>
+                  <h2>Our works</h2>
+                  <div className='subtitle'>Our Amazing works</div>
+              </div>
+              <Row className='portfoliolist'>
+                  {
+                      currentItems.map(works => {
+                          return (
+                              <Col sm={4} key={works.id}>
+                                  <div className='portfolio-wrapper'>
+                                      <a href={works.link}>
+                                      <Image src={works.image} rounded loading="lazy"/>
+                                          <div className='label text-center'>
+                                              <h3>{works.title}</h3>
+                                              <p>{works.subtitle}</p>
+                                          </div>
+                                      </a>
+                                  </div>
+                             </Col>
+                          )
+                      })
+                  }
+              </Row>
+               <Pagination size="sm">{paginationItems}</Pagination>
+          </Container>
       </section>
-    )
+  )
 }

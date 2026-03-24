@@ -19,7 +19,7 @@ export default function AppAbout() {
         </div>
         <Row>
           <Col sm={6}>
-            <Image src={img1} rounded />
+            <Image src={img1} rounded loading="lazy" />
           </Col>
           <Col sm={6}>
             <p className="text-center writeup-bg">
